@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseud-class
+            :: = pseudo-element
+            > = child
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::before{
+            content: '->'
+        }
+        .especial::after{
+            content: '<-';
+        }
+        .especial{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/"  target="_blank">youtube</a></li>
+        <li><a href="https://www.instagram.com/littlebodybigheart/" target="_blank" class="especial">instagram</a></li>
+        <li><a href="https://www.bing.com/search?q=buceta&cvid=9f9a4eb3f6e84fc2bfdda0fb685d3fff&aqs=edge..69i57j0l7.6540j0j4&FORM=ANAB01&PC=LCTS" target="_blank">alguma coisa</a></li>
+    </ul>
+</body>
+</html>
