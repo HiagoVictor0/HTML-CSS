@@ -1,0 +1,9 @@
+body{
+    height: 100vh;
+    border: 1px dashed black;
+    background-image: url('https://th.bing.com/th/id/OIP.jiC9hHhb2AKWu9rBXNr1mgAAAA?w=135&h=150&c=7&r=0&o=5&pid=1.7');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+}
