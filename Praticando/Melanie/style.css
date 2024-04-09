@@ -1,0 +1,277 @@
+html, body {
+    background-color: rgb(236, 219, 208);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    min-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.518);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(180, 126, 126), rgb(226, 177, 177), rgb(180, 126, 126));
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1 {
+    margin: 0;
+    padding: 50px;
+    font-size: 3em;
+    color: white;
+}
+
+header > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+}
+
+header > a:hover{
+    background-color: #f9cbcb;
+    color: rgb(180, 126, 126);
+    transition-duration: 0.5s;
+}
+
+.cry-baby > h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cry-baby > p {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: justify
+}
+
+.cry-baby {
+    padding: 10px;
+}
+
+.blur {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 270px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.blur h3 {
+    padding-left: 20px;
+}
+
+.album1 {
+    font-size: 1.3em;
+    background-image: url(Imagens/Cry-baby.png);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
+
+.k-12 > h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.k-12 > p {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.k-12 {
+    padding: 50px;
+}
+
+.album2 {
+    background-color: rgba(255, 192, 203, 0.6);
+    font-size: 1.3em;
+    background-image: url(Imagens/k12-album.webp);
+    background-position: bottom;
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 30px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.portals > h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.portals > p {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.portals {
+    padding: 50px;
+}
+
+.album3 {
+    background-color: rgb(27, 41, 28);
+    font-size: 1.3em;
+    background-image: url(Imagens/portals.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 30px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        min-width: auto;
+        padding: 0;
+    }
+
+    header > h1 {
+        padding: 20px;
+        font-size: 2em;
+    }
+
+    .cry-baby > h2 {
+        margin-left: 20px;
+    }
+
+    .cry-baby > p {
+        font-size: 1.1em;
+    }
+
+    .k-12 > h2,
+    .portals > h2 {
+        padding-left: 20px;
+    }
+
+    .k-12 > p,
+    .portals > p {
+        font-size: 1.1em;
+    }
+
+    .album1,
+    .album2,
+    .album3 {
+        padding: 10px;
+        background-size: cover;
+        font-size: 1em;
+    }
+    .cry-baby,
+    .k-12,
+    .portals{
+        padding: 15px;
+    }
+    header > a{
+        font-size: 1.5em;
+    }
+
+    .popup{
+        height: 600px;
+        width: 250px;
+    }
+
+    .popup ul{
+        padding: 0;
+        height: 480px;
+    }
+}
+
+footer{
+    background-color: rgb(180, 126, 126);
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+a{
+    color: #f9cbcb;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.518);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+    max-height: 750px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup h3{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+}
+
+.popup li{
+    font-weight: bold;
+    font-size: 1.4em;
+    background-image: linear-gradient(to right, #f9cbcb, white);
+}
+
+.popup p{
+    font-size: 1.3em;
+    text-align: justify;
+
+}
+.popup ul{
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+.popup button{
+    position: fixed;
+    top: 0;
+    left: 90%;
+    background-color: rgba(255, 0, 0, 0.5);
+    font-size: larger;
+    border-radius: 50%;
+}
+
+button{
+    border: none;
+    
+}
+
+button:hover{
+    box-shadow: -1px 1px 5px black;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+}
+
+
